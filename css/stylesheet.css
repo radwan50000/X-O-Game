@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color: black;
+    color: white;
+}
+
+body{
+    background: linear-gradient(90deg ,#59a5f0 ,#0b70bc ,#817ccc ,#473d8f);
+}
+
+#container{
+    width: 50%;
+    height: 75vh;
+    margin: 0px auto 0px auto;
+    transform: translate(0,15%);
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.578);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2c3e50;
+    border: 7px solid #222f3c;
+    position: relative;
+}
+
+.boxes{
+    width: 33%;
+    height: 33%;
+    border: 1px solid black;
+    border-color: transparent black black transparent;
+    cursor: pointer;
+    position: relative;
+}
+/* the X container */
+.x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+}
+
+.x div{
+    background-color: black;
+    width: 150px;
+    height: 10px;
+    position: absolute;
+}
+
+.oneX{
+    transform: rotate(-45deg);
+}
+.twoX{
+    transform: rotate(45deg);
+}
+/* the O container */
+.o{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+}
+
+.oneO{
+    width: 50%;
+    height: 70%;
+    border: 10px solid #bdc3c7;
+    border-radius: 50%;
+}
+
+#choose{
+    position: fixed;
+    width: 100px;
+    height: 80px;
+    top: 20px;
+    left: 20px;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+#choose input{
+    width: 20px;
+    height: 20px;
+}
+
+input, progress{
+    color: #222f3c;
+    accent-color: #2c3e50;
+}
+
+.winEnd{
+    width: 110%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 180px;
+    font-weight: bold;
+    position: fixed;
+    color: #21283d;
+    background: linear-gradient(90deg ,#ffeaa7,#fdcb6e,#e17055);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    flex-direction: column;
+    padding-bottom: 30px; 
+    border: 6px;
+    border-style: solid;
+    border-color: #21283d transparent #21283d transparent;
+}
+
+.winEnd div{
+    font-size: 30px;
+    padding: 10px;
+    border: 5px solid #21283d;
+    color: #21283d;
+    cursor: pointer;
+}
