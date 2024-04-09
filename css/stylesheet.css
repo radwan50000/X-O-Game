@@ -105,7 +105,7 @@ input, progress{
     font-weight: bold;
     position: fixed;
     color: #21283d;
-    background: linear-gradient(90deg ,#ffeaa7,#fdcb6e,#e17055);
+    background: linear-gradient(90deg, #ffeaa778, #fdcb6e82, #e1705561);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
